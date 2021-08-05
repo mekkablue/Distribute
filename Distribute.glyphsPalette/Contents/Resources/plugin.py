@@ -81,18 +81,16 @@ class Distribute (PalettePlugin):
 	def selectedObjects(self):
 		selection = []
 		# font = self.windowController().document().font
-		tab = self.windowController().activeEditViewController()
-		if tab:
-			layer = tab.activeLayer()
-			if layer:
-				for selectedItem in layer.selection:
-					if selectedItem in layer.shapes:
-						selection.append(selectedItem)
-					elif selectedItem.parent in layer.shapes:
-						# partially selected path:
-						parentItem = selectedItem.parent
-						if not parentItem in selection:
-							selection.append(parentItem)
+		layer = self.windowController().activeLayer()
+		if layer:
+			for selectedItem in layer.selection:
+				if selectedItem in layer.shapes:
+					selection.append(selectedItem)
+				elif selectedItem.parent in layer.shapes:
+					# partially selected path:
+					parentItem = selectedItem.parent
+					if not parentItem in selection:
+						selection.append(parentItem)
 		return selection
 
 	@objc.python_method
