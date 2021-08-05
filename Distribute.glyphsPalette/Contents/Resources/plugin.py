@@ -97,22 +97,22 @@ class Distribute (PalettePlugin):
 	def distribute(self, distributePos=leftEdge, vertically=False):
 		selectedObjects = self.selectedObjects()
 		if selectedObjects:
-			sortedShapes = sorted( selectedObjects, key = lambda shape: distributePos(shape) )
+			sortedShapes = sorted(selectedObjects, key = lambda shape: distributePos(shape))
 			firstPos = distributePos(sortedShapes[0])
 			lastPos = distributePos(sortedShapes[-1])
 			totalSpan = lastPos - firstPos
 			shapeCount = len(sortedShapes)
-			displacement = totalSpan/(shapeCount-1)
+			displacement = totalSpan / (shapeCount - 1)
 			for i, shape in enumerate(sortedShapes):
-				if i>0 and i<(shapeCount-1): # do not need to move edge shapes
+				if i > 0 and i < (shapeCount-1): # do not need to move edge shapes
 					currentAbsolutePos = distributePos(shape)
-					newRelativePos = i*displacement
-					move = firstPos+newRelativePos - currentAbsolutePos
+					newRelativePos = i * displacement
+					move = firstPos + newRelativePos - currentAbsolutePos
 					if vertically:
 						movement = transformationForMove(y=move)
 					else:
 						movement = transformationForMove(x=move)
-					shape.applyTransform( movement )
+					shape.applyTransform(movement)
 
 	@objc.IBAction
 	def distributeBottomEdges_(self, sender):
@@ -142,10 +142,10 @@ class Distribute (PalettePlugin):
 	def distributeGaps(self, widthOrHeight=shapeWidth, verticalDistribution=False):
 		selectedObjects = self.selectedObjects()
 		if selectedObjects:
-			sortedShapes = sorted( 
-				selectedObjects, 
+			sortedShapes = sorted(
+				selectedObjects,
 				key = lambda shape: NSMidY(shape.bounds) if verticalDistribution else NSMidX(shape.bounds)
-				)
+			)
 				
 			encompassingRect = sortedShapes[0].bounds.copy()
 			totalWidthOrHeight = 0
@@ -154,14 +154,14 @@ class Distribute (PalettePlugin):
 				totalWidthOrHeight += widthOrHeight(shape)
 			
 			shapeCount = len(sortedShapes)
-			gapCount = shapeCount-1
+			gapCount = shapeCount - 1
 			encompassingWidthOrHeight = widthOrHeight(encompassingRect)
 			totalGaps = encompassingWidthOrHeight - totalWidthOrHeight
-			newGap = totalGaps/gapCount
+			newGap = totalGaps / gapCount
 			
 			for i, shape in enumerate(sortedShapes):
-				if i>0 and i<(shapeCount-1): # do not need to move edge shapes
-					previousShape = sortedShapes[i-1]
+				if i > 0 and i < (shapeCount - 1): # do not need to move edge shapes
+					previousShape = sortedShapes[i - 1]
 					previousShapeEdge = topEdge(previousShape) if verticalDistribution else rightEdge(previousShape)
 					shapeEdge = bottomEdge(shape) if verticalDistribution else leftEdge(shape)
 					currentGap = shapeEdge - previousShapeEdge
@@ -170,7 +170,7 @@ class Distribute (PalettePlugin):
 						movement = transformationForMove(y=move)
 					else:
 						movement = transformationForMove(x=move)
-					shape.applyTransform( movement )
+					shape.applyTransform(movement)
 	
 	@objc.IBAction
 	def distributeGapsV_(self, sender):
