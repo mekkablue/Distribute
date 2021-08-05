@@ -72,6 +72,7 @@ class Distribute (PalettePlugin):
 			'es': 'Distribuir',
 			'pt': 'Distribuir',
 			'cs': 'Rozložit',
+			'zh': '重新排列',
 			})
 		
 		# Load .nib dialog (without .extension)
