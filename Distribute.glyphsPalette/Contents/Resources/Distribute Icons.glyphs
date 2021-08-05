@@ -18,23 +18,22 @@ fontMaster = (
 id = m01;
 metricValues = (
 {
-over = 16;
-pos = 800;
+over = 4;
+pos = 210;
 },
 {
-over = 16;
-pos = 700;
+over = 4;
+pos = 158;
 },
 {
-over = 16;
-pos = 500;
+over = 4;
+pos = 113;
 },
 {
-over = -16;
+over = -4;
 },
 {
-over = -16;
-pos = -200;
+over = -4;
 },
 {
 over = -16;
@@ -46,7 +45,7 @@ name = Regular;
 glyphs = (
 {
 category = Icon;
-glyphname = icon.distributeBottomEdgesV;
+glyphname = DistributeBottomEdgesVTemplate;
 layers = (
 {
 attr = {
@@ -57,82 +56,82 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(390,281,o),
-(314,203,o),
-(314,102,c),
-(669,102,l),
-(669,203,o),
-(591,281,o),
-(490,281,cs)
+(78,90,o),
+(55,67,o),
+(55,35,c),
+(165,35,l),
+(165,67,o),
+(141,90,o),
+(109,90,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(182,472,o),
-(122,412,o),
-(122,333,c),
-(398,333,l),
-(398,412,o),
-(338,472,o),
-(260,472,cs)
+(35,146,o),
+(17,129,o),
+(17,105,c),
+(100,105,l),
+(100,129,o),
+(82,146,o),
+(59,146,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(329,700,o),
-(273,643,o),
-(273,568,c),
-(534,568,l),
-(534,643,o),
-(478,700,o),
-(403,700,cs)
+(74,205,o),
+(61,192,o),
+(61,175,c),
+(120,175,l),
+(120,192,o),
+(108,205,o),
+(91,205,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(81,100,l),
-(724,100,l)
+(0,35,l),
+(180,35,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(81,335,l),
-(724,335,l)
+(0,105,l),
+(180,105,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(81,570,l),
-(724,570,l)
+(0,175,l),
+(180,175,l)
 );
 }
 );
@@ -144,18 +143,18 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = 30;
+size = 21;
 }
 );
 };
 };
-width = 800;
+width = 180;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeCentersH;
+glyphname = DistributeCentersHTemplate;
 layers = (
 {
 attr = {
@@ -166,97 +165,97 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(199,534,o),
-(229,565,o),
-(229,605,cs),
-(229,645,o),
-(199,675,o),
-(159,675,cs),
-(119,675,o),
-(88,645,o),
-(88,605,cs),
-(88,565,o),
-(119,534,o),
-(159,534,cs)
+(65,61,o),
+(52,74,o),
+(35,74,cs),
+(18,74,o),
+(5,61,o),
+(5,44,cs),
+(5,27,o),
+(18,14,o),
+(35,14,cs),
+(52,14,o),
+(65,27,o),
+(65,44,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(683,358,o),
-(725,400,o),
-(725,455,cs),
-(725,510,o),
-(683,551,o),
-(629,551,cs),
-(574,551,o),
-(532,510,o),
-(532,455,cs),
-(532,400,o),
-(574,358,o),
-(629,358,cs)
+(127,142,o),
+(117,151,o),
+(105,151,cs),
+(93,151,o),
+(83,142,o),
+(83,130,cs),
+(83,117,o),
+(93,108,o),
+(105,108,cs),
+(117,108,o),
+(127,117,o),
+(127,130,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(468,125,o),
-(524,182,o),
-(524,257,cs),
-(524,331,o),
-(468,387,o),
-(394,387,cs),
-(319,387,o),
-(263,331,o),
-(263,257,cs),
-(263,182,o),
-(319,125,o),
-(394,125,cs)
+(210,108,o),
+(195,123,o),
+(175,123,cs),
+(155,123,o),
+(140,108,o),
+(140,88,cs),
+(140,68,o),
+(155,53,o),
+(175,53,cs),
+(195,53,o),
+(210,68,o),
+(210,88,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(159,726,l),
-(159,83,l)
+(175,0,l),
+(175,180,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(394,726,l),
-(394,83,l)
+(105,0,l),
+(105,180,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(629,726,l),
-(629,83,l)
+(35,0,l),
+(35,180,l)
 );
 }
 );
@@ -268,18 +267,19 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 18;
 }
 );
 };
 };
-width = 800;
+vertWidth = 180;
+width = 210;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeCentersV;
+glyphname = DistributeCentersVTemplate;
 layers = (
 {
 attr = {
@@ -290,97 +290,97 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(237,587,o),
-(267,618,o),
-(267,658,cs),
-(267,698,o),
-(237,728,o),
-(197,728,cs),
-(157,728,o),
-(126,698,o),
-(126,658,cs),
-(126,618,o),
-(157,587,o),
-(197,587,cs)
+(61,145,o),
+(74,158,o),
+(74,175,cs),
+(74,192,o),
+(61,205,o),
+(44,205,cs),
+(27,205,o),
+(14,192,o),
+(14,175,cs),
+(14,158,o),
+(27,145,o),
+(44,145,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(631,330,o),
-(673,372,o),
-(673,427,cs),
-(673,482,o),
-(631,523,o),
-(577,523,cs),
-(522,523,o),
-(480,482,o),
-(480,427,cs),
-(480,372,o),
-(522,330,o),
-(577,330,cs)
+(142,83,o),
+(151,93,o),
+(151,105,cs),
+(151,117,o),
+(142,127,o),
+(130,127,cs),
+(117,127,o),
+(108,117,o),
+(108,105,cs),
+(108,93,o),
+(117,83,o),
+(130,83,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(466,60,o),
-(522,117,o),
-(522,192,cs),
-(522,266,o),
-(466,322,o),
-(392,322,cs),
-(317,322,o),
-(261,266,o),
-(261,192,cs),
-(261,117,o),
-(317,60,o),
-(392,60,cs)
+(108,0,o),
+(123,15,o),
+(123,35,cs),
+(123,55,o),
+(108,70,o),
+(88,70,cs),
+(68,70,o),
+(53,55,o),
+(53,35,cs),
+(53,15,o),
+(68,0,o),
+(88,0,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,660,l),
-(71,660,l)
+(0,35,l),
+(180,35,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,425,l),
-(71,425,l)
+(0,105,l),
+(180,105,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,190,l),
-(71,190,l)
+(0,175,l),
+(180,175,l)
 );
 }
 );
@@ -392,18 +392,18 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 21;
 }
 );
 };
 };
-width = 800;
+width = 180;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeGapsH;
+glyphname = DistributeGapsHTemplate;
 layers = (
 {
 attr = {
@@ -414,64 +414,62 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(86,559,l),
-(232,559,l),
-(232,679,l),
-(86,679,l)
+(10,110,l),
+(42,110,l),
+(42,150,l),
+(10,150,l)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(239,139,l),
-(445,139,l),
-(445,367,l),
-(239,367,l)
+(54,20,l),
+(110,20,l),
+(110,80,l),
+(54,80,l)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(468,406,l),
-(713,406,l),
-(713,602,l),
-(468,602,l)
+(126,90,l),
+(180,90,l),
+(180,140,l),
+(126,140,l)
 );
 },
 {
 attr = {
-fillColor = (237,28,36,255);
+strokeColor = (0,255);
+strokeWidth = 30;
 };
-closed = 1;
+closed = 0;
 nodes = (
-(207,726,l),
-(207,83,l),
-(284,83,l),
-(284,726,l)
+(55,180,l),
+(55,0,l)
 );
 },
 {
 attr = {
-fillColor = (237,28,36,255);
+strokeColor = (0,255);
+strokeWidth = 30;
 };
-closed = 1;
+closed = 0;
 nodes = (
-(431,726,l),
-(431,83,l),
-(508,83,l),
-(508,726,l)
+(125,180,l),
+(125,0,l)
 );
 }
 );
@@ -483,18 +481,19 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 18;
 }
 );
 };
 };
-width = 800;
+vertWidth = 180;
+width = 180;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeGapsV;
+glyphname = DistributeGapsVTemplate;
 layers = (
 {
 attr = {
@@ -505,64 +504,62 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(551,718,l),
-(551,548,l),
-(671,548,l),
-(671,718,l)
+(110,170,l),
+(110,138,l),
+(150,138,l),
+(150,170,l)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(135,513,l),
-(135,315,l),
-(363,315,l),
-(363,513,l)
+(20,126,l),
+(20,70,l),
+(80,70,l),
+(80,126,l)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(338,287,l),
-(338,91,l),
-(534,91,l),
-(534,287,l)
+(90,54,l),
+(90,0,l),
+(140,0,l),
+(140,54,l)
 );
 },
 {
 attr = {
-fillColor = (237,28,36,255);
+strokeColor = (0,255);
+strokeWidth = 30;
 };
-closed = 1;
+closed = 0;
 nodes = (
-(722,558,l),
-(79,558,l),
-(79,481,l),
-(722,481,l)
+(180,125,l),
+(0,125,l)
 );
 },
 {
 attr = {
-fillColor = (237,28,36,255);
+strokeColor = (0,255);
+strokeWidth = 30;
 };
-closed = 1;
+closed = 0;
 nodes = (
-(722,334,l),
-(79,334,l),
-(79,257,l),
-(722,257,l)
+(180,55,l),
+(0,55,l)
 );
 }
 );
@@ -574,18 +571,19 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 18;
 }
 );
 };
 };
-width = 800;
+vertWidth = 180;
+width = 180;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeLeftEdgesH;
+glyphname = DistributeLeftEdgesHTemplate;
 layers = (
 {
 attr = {
@@ -596,82 +594,82 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(212,379,o),
-(275,444,o),
-(275,528,cs),
-(275,612,o),
-(212,675,o),
-(128,675,c),
-(128,379,l)
+(90,102,o),
+(67,125,o),
+(35,125,c),
+(35,15,l),
+(67,15,o),
+(90,39,o),
+(90,71,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(652,378,o),
-(694,420,o),
-(694,475,cs),
-(694,530,o),
-(652,571,o),
-(598,571,c),
-(598,378,l)
+(146,145,o),
+(129,163,o),
+(105,163,c),
+(105,80,l),
+(129,80,o),
+(146,98,o),
+(146,121,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(464,125,o),
-(540,203,o),
-(540,305,cs),
-(540,405,o),
-(464,482,o),
-(363,482,c),
-(363,125,l)
+(205,106,o),
+(192,119,o),
+(175,119,c),
+(175,60,l),
+(192,60,o),
+(205,72,o),
+(205,89,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(128,726,l),
-(128,83,l)
+(35,180,l),
+(35,0,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(363,726,l),
-(363,83,l)
+(105,180,l),
+(105,0,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(598,726,l),
-(598,83,l)
+(175,180,l),
+(175,0,l)
 );
 }
 );
@@ -683,18 +681,19 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 18;
 }
 );
 };
 };
-width = 800;
+vertWidth = 180;
+width = 210;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeRightEdgesH;
+glyphname = DistributeRightEdgesHTemplate;
 layers = (
 {
 attr = {
@@ -705,82 +704,82 @@ shapes = (
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(617,406,o),
-(559,346,o),
-(559,269,cs),
-(559,192,o),
-(617,134,o),
-(694,134,c),
-(694,406,l)
+(120,78,o),
+(143,55,o),
+(175,55,c),
+(175,165,l),
+(143,165,o),
+(120,141,o),
+(120,109,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(170,431,o),
-(128,389,o),
-(128,334,cs),
-(128,279,o),
-(170,238,o),
-(224,238,c),
-(224,431,l)
+(64,35,o),
+(81,17,o),
+(105,17,c),
+(105,100,l),
+(81,100,o),
+(64,82,o),
+(64,59,cs)
 );
 },
 {
 attr = {
 fill = "1";
-fillColor = (10,96,255,255);
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(365,684,o),
-(294,612,o),
-(294,516,cs),
-(294,422,o),
-(365,351,o),
-(459,351,c),
-(459,684,l)
+(5,74,o),
+(18,61,o),
+(35,61,c),
+(35,120,l),
+(18,120,o),
+(5,108,o),
+(5,91,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(694,726,l),
-(694,83,l)
+(175,180,l),
+(175,0,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(459,726,l),
-(459,83,l)
+(105,180,l),
+(105,0,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(224,726,l),
-(224,83,l)
+(35,180,l),
+(35,0,l)
 );
 }
 );
@@ -792,18 +791,19 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 18;
 }
 );
 };
 };
-width = 800;
+vertWidth = 180;
+width = 210;
 }
 );
 },
 {
 category = Icon;
-glyphname = icon.distributeTopEdgesV;
+glyphname = DistributeTopEdgesVTemplate;
 layers = (
 {
 attr = {
@@ -813,83 +813,83 @@ layerId = m01;
 shapes = (
 {
 attr = {
-fill = 1;
-fillColor = (10,96,255,255);
+fill = "1";
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(405,499,o),
-(481,577,o),
-(481,678,c),
-(126,678,l),
-(126,577,o),
-(204,499,o),
-(305,499,cs)
+(102,120,o),
+(125,143,o),
+(125,175,c),
+(15,175,l),
+(15,143,o),
+(39,120,o),
+(71,120,cs)
 );
 },
 {
 attr = {
-fill = 1;
-fillColor = (10,96,255,255);
+fill = "1";
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(613,308,o),
-(673,368,o),
-(673,447,c),
-(397,447,l),
-(397,368,o),
-(457,308,o),
-(535,308,cs)
+(145,64,o),
+(163,81,o),
+(163,105,c),
+(80,105,l),
+(80,81,o),
+(98,64,o),
+(121,64,cs)
 );
 },
 {
 attr = {
-fill = 1;
-fillColor = (10,96,255,255);
+fill = "1";
+fillColor = (0,102);
 };
 closed = 1;
 nodes = (
-(466,80,o),
-(522,137,o),
-(522,212,c),
-(261,212,l),
-(261,137,o),
-(317,80,o),
-(392,80,cs)
+(106,5,o),
+(119,18,o),
+(119,35,c),
+(60,35,l),
+(60,18,o),
+(72,5,o),
+(89,5,cs)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,680,l),
-(71,680,l)
+(180,175,l),
+(0,175,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,445,l),
-(71,445,l)
+(180,105,l),
+(0,105,l)
 );
 },
 {
 attr = {
-strokeColor = (237,28,36,255);
-strokeWidth = 30;
+strokeColor = (0,255);
+strokeWidth = 10;
 };
 closed = 0;
 nodes = (
-(714,210,l),
-(71,210,l)
+(180,35,l),
+(0,35,l)
 );
 }
 );
@@ -901,12 +901,12 @@ presets = (
 filename = "{{{glyph.name}}}";
 format = PDF;
 name = icon;
-size = "30";
+size = 21;
 }
 );
 };
 };
-width = 800;
+width = 180;
 }
 );
 }
@@ -931,7 +931,7 @@ type = descender;
 type = "italic angle";
 }
 );
-unitsPerEm = 1000;
+unitsPerEm = 180;
 userData = {
 GSDimensionPlugin.Dimensions = {
 m01 = {
