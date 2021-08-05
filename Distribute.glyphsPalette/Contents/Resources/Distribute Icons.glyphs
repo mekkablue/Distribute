@@ -1,0 +1,943 @@
+{
+.appVersion = "3095";
+.formatVersion = 3;
+customParameters = (
+{
+name = "Write lastChange";
+value = 0;
+},
+{
+name = "Write DisplayStrings";
+value = 0;
+}
+);
+date = "2021-08-03 15:51:44 +0000";
+familyName = "Distribute Icons";
+fontMaster = (
+{
+id = m01;
+metricValues = (
+{
+over = 16;
+pos = 800;
+},
+{
+over = 16;
+pos = 700;
+},
+{
+over = 16;
+pos = 500;
+},
+{
+over = -16;
+},
+{
+over = -16;
+pos = -200;
+},
+{
+over = -16;
+}
+);
+name = Regular;
+}
+);
+glyphs = (
+{
+category = Icon;
+glyphname = icon.distributeBottomEdgesV;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(390,281,o),
+(314,203,o),
+(314,102,c),
+(669,102,l),
+(669,203,o),
+(591,281,o),
+(490,281,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(182,472,o),
+(122,412,o),
+(122,333,c),
+(398,333,l),
+(398,412,o),
+(338,472,o),
+(260,472,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(329,700,o),
+(273,643,o),
+(273,568,c),
+(534,568,l),
+(534,643,o),
+(478,700,o),
+(403,700,cs)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(81,100,l),
+(724,100,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(81,335,l),
+(724,335,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(81,570,l),
+(724,570,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = 30;
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeCentersH;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(199,534,o),
+(229,565,o),
+(229,605,cs),
+(229,645,o),
+(199,675,o),
+(159,675,cs),
+(119,675,o),
+(88,645,o),
+(88,605,cs),
+(88,565,o),
+(119,534,o),
+(159,534,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(683,358,o),
+(725,400,o),
+(725,455,cs),
+(725,510,o),
+(683,551,o),
+(629,551,cs),
+(574,551,o),
+(532,510,o),
+(532,455,cs),
+(532,400,o),
+(574,358,o),
+(629,358,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(468,125,o),
+(524,182,o),
+(524,257,cs),
+(524,331,o),
+(468,387,o),
+(394,387,cs),
+(319,387,o),
+(263,331,o),
+(263,257,cs),
+(263,182,o),
+(319,125,o),
+(394,125,cs)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(159,726,l),
+(159,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(394,726,l),
+(394,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(629,726,l),
+(629,83,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeCentersV;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(237,587,o),
+(267,618,o),
+(267,658,cs),
+(267,698,o),
+(237,728,o),
+(197,728,cs),
+(157,728,o),
+(126,698,o),
+(126,658,cs),
+(126,618,o),
+(157,587,o),
+(197,587,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(631,330,o),
+(673,372,o),
+(673,427,cs),
+(673,482,o),
+(631,523,o),
+(577,523,cs),
+(522,523,o),
+(480,482,o),
+(480,427,cs),
+(480,372,o),
+(522,330,o),
+(577,330,cs)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(466,60,o),
+(522,117,o),
+(522,192,cs),
+(522,266,o),
+(466,322,o),
+(392,322,cs),
+(317,322,o),
+(261,266,o),
+(261,192,cs),
+(261,117,o),
+(317,60,o),
+(392,60,cs)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,660,l),
+(71,660,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,425,l),
+(71,425,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,190,l),
+(71,190,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeGapsH;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(86,559,l),
+(232,559,l),
+(232,679,l),
+(86,679,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(239,139,l),
+(445,139,l),
+(445,367,l),
+(239,367,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(468,406,l),
+(713,406,l),
+(713,602,l),
+(468,602,l)
+);
+},
+{
+attr = {
+fillColor = (237,28,36,255);
+};
+closed = 1;
+nodes = (
+(207,726,l),
+(207,83,l),
+(284,83,l),
+(284,726,l)
+);
+},
+{
+attr = {
+fillColor = (237,28,36,255);
+};
+closed = 1;
+nodes = (
+(431,726,l),
+(431,83,l),
+(508,83,l),
+(508,726,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeGapsV;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(551,718,l),
+(551,548,l),
+(671,548,l),
+(671,718,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(135,513,l),
+(135,315,l),
+(363,315,l),
+(363,513,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(338,287,l),
+(338,91,l),
+(534,91,l),
+(534,287,l)
+);
+},
+{
+attr = {
+fillColor = (237,28,36,255);
+};
+closed = 1;
+nodes = (
+(722,558,l),
+(79,558,l),
+(79,481,l),
+(722,481,l)
+);
+},
+{
+attr = {
+fillColor = (237,28,36,255);
+};
+closed = 1;
+nodes = (
+(722,334,l),
+(79,334,l),
+(79,257,l),
+(722,257,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeLeftEdgesH;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(212,379,o),
+(275,444,o),
+(275,528,cs),
+(275,612,o),
+(212,675,o),
+(128,675,c),
+(128,379,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(652,378,o),
+(694,420,o),
+(694,475,cs),
+(694,530,o),
+(652,571,o),
+(598,571,c),
+(598,378,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(464,125,o),
+(540,203,o),
+(540,305,cs),
+(540,405,o),
+(464,482,o),
+(363,482,c),
+(363,125,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(128,726,l),
+(128,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(363,726,l),
+(363,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(598,726,l),
+(598,83,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeRightEdgesH;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(617,406,o),
+(559,346,o),
+(559,269,cs),
+(559,192,o),
+(617,134,o),
+(694,134,c),
+(694,406,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(170,431,o),
+(128,389,o),
+(128,334,cs),
+(128,279,o),
+(170,238,o),
+(224,238,c),
+(224,431,l)
+);
+},
+{
+attr = {
+fill = "1";
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(365,684,o),
+(294,612,o),
+(294,516,cs),
+(294,422,o),
+(365,351,o),
+(459,351,c),
+(459,684,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(694,726,l),
+(694,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(459,726,l),
+(459,83,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(224,726,l),
+(224,83,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+},
+{
+category = Icon;
+glyphname = icon.distributeTopEdgesV;
+layers = (
+{
+attr = {
+color = 1;
+};
+layerId = m01;
+shapes = (
+{
+attr = {
+fill = 1;
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(405,499,o),
+(481,577,o),
+(481,678,c),
+(126,678,l),
+(126,577,o),
+(204,499,o),
+(305,499,cs)
+);
+},
+{
+attr = {
+fill = 1;
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(613,308,o),
+(673,368,o),
+(673,447,c),
+(397,447,l),
+(397,368,o),
+(457,308,o),
+(535,308,cs)
+);
+},
+{
+attr = {
+fill = 1;
+fillColor = (10,96,255,255);
+};
+closed = 1;
+nodes = (
+(466,80,o),
+(522,137,o),
+(522,212,c),
+(261,212,l),
+(261,137,o),
+(317,80,o),
+(392,80,cs)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,680,l),
+(71,680,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,445,l),
+(71,445,l)
+);
+},
+{
+attr = {
+strokeColor = (237,28,36,255);
+strokeWidth = 30;
+};
+closed = 0;
+nodes = (
+(714,210,l),
+(71,210,l)
+);
+}
+);
+userData = {
+com.GeorgSeifert.ImageExportSettings = {
+path = "..";
+presets = (
+{
+filename = "{{{glyph.name}}}";
+format = PDF;
+name = icon;
+size = "30";
+}
+);
+};
+};
+width = 800;
+}
+);
+}
+);
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+}
+);
+unitsPerEm = 1000;
+userData = {
+GSDimensionPlugin.Dimensions = {
+m01 = {
+};
+};
+};
+versionMajor = 1;
+versionMinor = 0;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Distribute">
+            <connections>
+                <outlet property="buttonDistributeBottomEdges" destination="ddQ-v6-mrp" id="Axe-dc-8Ht"/>
+                <outlet property="dialog" destination="1" id="Tkv-lP-HY5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1" customClass="GSPaletteView">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="Distribute Bottom Edges" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddQ-v6-mrp">
+                    <rect key="frame" x="9" y="44" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" title="Distribute Bottom Edges" bezelStyle="shadowlessSquare" image="icon.distributeBottomEdgesV" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="Gdk-XH-UYi">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeBottomEdges:" target="-2" id="clm-gT-iPZ"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Centers Vertically" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-Yr-4ze">
+                    <rect key="frame" x="38" y="44" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" title="Distribute Centers Vertically" bezelStyle="shadowlessSquare" image="icon.distributeCentersV" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="pKZ-Ls-7rO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeCentersV:" target="-2" id="APD-6n-2ch"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Top Edges" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-Hf-fAJ">
+                    <rect key="frame" x="67" y="44" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" title="Distribute Top Edges" bezelStyle="shadowlessSquare" image="icon.distributeTopEdgesV" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="IrQ-oM-GrT">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeTopEdges:" target="-2" id="zza-gz-8bo"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Gaps Vertically" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BG-Ma-VFA">
+                    <rect key="frame" x="96" y="44" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="square" title="Distribute Gaps Vertically" bezelStyle="shadowlessSquare" image="icon.distributeGapsV" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="EgI-8H-wO5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeGapsV:" target="-2" id="zDm-DK-dSo"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Left Edges" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bI8-xv-5Ez">
+                    <rect key="frame" x="9" y="13" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" title="Distribute Left Edges" bezelStyle="shadowlessSquare" image="icon.distributeLeftEdgesH" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="10h-on-9XT">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeLeftEdges:" target="-2" id="SOA-X1-nEH"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Centers Horizontally" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzY-HM-F9A">
+                    <rect key="frame" x="38" y="13" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" title="Distribute Centers Horizontally" bezelStyle="shadowlessSquare" image="icon.distributeCentersH" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="rSn-hi-9fW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeCentersH:" target="-2" id="cIA-AT-OqU"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Right Edges" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LpY-FO-hft">
+                    <rect key="frame" x="67" y="13" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="square" title="Distribute Right Edges" bezelStyle="shadowlessSquare" image="icon.distributeRightEdgesH" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="Ehx-dN-aCi">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeRightEdges:" target="-2" id="Z7W-AT-qJP"/>
+                    </connections>
+                </button>
+                <button toolTip="Distribute Gaps Horizontally" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTz-ok-hqx">
+                    <rect key="frame" x="96" y="13" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="square" title="Distribute Gaps Horizontally" bezelStyle="shadowlessSquare" image="icon.distributeGapsH" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="Gks-3j-hsE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <color key="contentTintColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="distributeGapsH:" target="-2" id="jSE-oY-w5j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <connections>
+                <outlet property="_controller" destination="-2" id="jOT-R9-oyt"/>
+            </connections>
+            <point key="canvasLocation" x="129.5" y="158.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="icon.distributeBottomEdgesV" width="24" height="30"/>
+        <image name="icon.distributeCentersH" width="24" height="30"/>
+        <image name="icon.distributeCentersV" width="24" height="30"/>
+        <image name="icon.distributeGapsH" width="24" height="30"/>
+        <image name="icon.distributeGapsV" width="24" height="30"/>
+        <image name="icon.distributeLeftEdgesH" width="24" height="30"/>
+        <image name="icon.distributeRightEdgesH" width="24" height="30"/>
+        <image name="icon.distributeTopEdgesV" width="24" height="30"/>
+    </resources>
+</document>
