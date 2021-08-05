@@ -19,7 +19,7 @@ Hovering over a button will display an explanatory tooltip.
 
 ### License
 
-Copyright 2019 Rainer Erich Scheichelbauer (@mekkablue).
+Copyright 2021 Rainer Erich Scheichelbauer (@mekkablue).
 Based on sample code by Georg Seifert (@schriftgestalt) and Jan Gerner (@yanone).
 
 Licensed under the Apache License, Version 2.0 (the "License");
