@@ -97,7 +97,7 @@ class Distribute (PalettePlugin):
 	@objc.python_method
 	def distribute(self, distributePos=leftEdge, vertically=False):
 		selectedObjects = self.selectedObjects()
-		if selectedObjects:
+		if selectedObjects and len(selectedObjects > 2):
 			sortedShapes = sorted(selectedObjects, key = lambda shape: distributePos(shape))
 			firstPos = distributePos(sortedShapes[0])
 			lastPos = distributePos(sortedShapes[-1])
