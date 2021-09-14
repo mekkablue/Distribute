@@ -15,7 +15,7 @@ from __future__ import division, print_function, unicode_literals
 import objc, math
 from GlyphsApp import *
 from GlyphsApp.plugins import *
-from AppKit import NSAffineTransform, NSAffineTransformStruct, NSUnionRect, NSMidX, NSMidY
+from AppKit import NSAffineTransform, NSAffineTransformStruct, NSUnionRect, NSMidX, NSMidY, NSPoint
 
 def leftEdge(shape):
 	return shape.bounds.origin.x
@@ -97,23 +97,45 @@ class Distribute (PalettePlugin):
 	@objc.python_method
 	def distribute(self, distributePos=leftEdge, vertically=False):
 		selectedObjects = self.selectedObjects()
-		if selectedObjects and len(selectedObjects > 2):
-			sortedShapes = sorted(selectedObjects, key = lambda shape: distributePos(shape))
-			firstPos = distributePos(sortedShapes[0])
-			lastPos = distributePos(sortedShapes[-1])
-			totalSpan = lastPos - firstPos
-			shapeCount = len(sortedShapes)
-			displacement = totalSpan / (shapeCount - 1)
-			for i, shape in enumerate(sortedShapes):
-				if i > 0 and i < (shapeCount-1): # do not need to move edge shapes
-					currentAbsolutePos = distributePos(shape)
-					newRelativePos = i * displacement
-					move = firstPos + newRelativePos - currentAbsolutePos
-					if vertically:
-						movement = transformationForMove(y=move)
-					else:
-						movement = transformationForMove(x=move)
-					shape.applyTransform(movement)
+		if selectedObjects:
+			sortedShapes = None
+			
+			if len(selectedObjects) == 1:
+				# align with glyph metrics if only one object is selected:
+				shape = selectedObjects[0]
+				layer = shape.layer()
+				ghost1, ghost2 = GSPath(), GSPath()
+				if distributePos in (leftEdge, horizontalCenter, rightEdge):
+					ghost1.nodes.append(GSNode())
+					ghost2.nodes.append(GSNode( (layer.width,0) ))
+				elif distributePos in (bottomEdge, verticalCenter, topEdge):
+					heights = sorted([m.position for m in layer.metrics])
+					if len(heights) == 0:
+						heights = (0.0,)
+					ghost1.nodes.append(GSNode( (0,heights[0]) ))
+					ghost2.nodes.append(GSNode( (0,heights[-1]) ))
+				sortedShapes = (ghost1, selectedObjects[0], ghost2)
+				
+			elif len(selectedObjects) > 2:
+				# align 3+ objects with each other:
+				sortedShapes = sorted(selectedObjects, key = lambda shape: distributePos(shape))
+				
+			if sortedShapes:
+				firstPos = distributePos(sortedShapes[0])
+				lastPos = distributePos(sortedShapes[-1])
+				totalSpan = lastPos - firstPos
+				shapeCount = len(sortedShapes)
+				displacement = totalSpan / (shapeCount - 1)
+				for i, shape in enumerate(sortedShapes):
+					if i > 0 and i < (shapeCount-1): # do not need to move edge shapes
+						currentAbsolutePos = distributePos(shape)
+						newRelativePos = i * displacement
+						move = firstPos + newRelativePos - currentAbsolutePos
+						if vertically:
+							movement = transformationForMove(y=move)
+						else:
+							movement = transformationForMove(x=move)
+						shape.applyTransform(movement)
 
 	@objc.IBAction
 	def distributeBottomEdges_(self, sender):
@@ -142,7 +164,7 @@ class Distribute (PalettePlugin):
 	@objc.python_method
 	def distributeGaps(self, widthOrHeight=shapeWidth, verticalDistribution=False):
 		selectedObjects = self.selectedObjects()
-		if selectedObjects:
+		if selectedObjects and len(selectedObjects>2):
 			sortedShapes = sorted(
 				selectedObjects,
 				key = lambda shape: NSMidY(shape.bounds) if verticalDistribution else NSMidX(shape.bounds)
