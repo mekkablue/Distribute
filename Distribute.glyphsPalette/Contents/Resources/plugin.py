@@ -164,7 +164,7 @@ class Distribute (PalettePlugin):
 	@objc.python_method
 	def distributeGaps(self, widthOrHeight=shapeWidth, verticalDistribution=False):
 		selectedObjects = self.selectedObjects()
-		if selectedObjects and len(selectedObjects>2):
+		if selectedObjects and len(selectedObjects)>2:
 			sortedShapes = sorted(
 				selectedObjects,
 				key = lambda shape: NSMidY(shape.bounds) if verticalDistribution else NSMidX(shape.bounds)
