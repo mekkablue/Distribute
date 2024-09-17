@@ -15,7 +15,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.03</string> <!-- 1.0 -->
 	<key>CFBundleVersion</key>
-	<string>5</string> <!-- 123 -->
+	<string>6</string> <!-- 123 -->
 	<key>UpdateFeedURL</key>
 	<string>https://raw.githubusercontent.com/mekkablue/Distribute/master/Distribute.glyphsPalette/Contents/Info.plist</string>
 	<key>productPageURL</key>
