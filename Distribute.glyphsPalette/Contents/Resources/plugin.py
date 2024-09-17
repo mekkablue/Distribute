@@ -3,53 +3,61 @@
 ###########################################################################################################
 #
 #
-#	Palette Plugin
+# Palette Plugin
 #
-#	Read the docs:
-#	https://github.com/schriftgestalt/GlyphsSDK/tree/master/Python%20Templates/Palette
+# Read the docs:
+# https://github.com/schriftgestalt/GlyphsSDK/tree/master/Python%20Templates/Palette
 #
 #
 ###########################################################################################################
 
 from __future__ import division, print_function, unicode_literals
-import objc, math
-from GlyphsApp import *
-from GlyphsApp.plugins import *
-from AppKit import NSAffineTransform, NSAffineTransformStruct, NSUnionRect, NSMidX, NSMidY, NSPoint
+import objc
+from GlyphsApp import Glyphs, GSPath, GSNode
+from GlyphsApp.plugins import PalettePlugin
+from AppKit import NSAffineTransform, NSRect, NSUnionRect, NSMidX, NSMidY
+
 
 def leftEdge(shape):
 	return shape.bounds.origin.x
-	
+
+
 def horizontalCenter(shape):
-	return shape.bounds.origin.x + shape.bounds.size.width/2
+	return shape.bounds.origin.x + shape.bounds.size.width / 2
+
 
 def rightEdge(shape):
 	return shape.bounds.origin.x + shape.bounds.size.width
 
+
 def bottomEdge(shape):
 	return shape.bounds.origin.y
 
+
 def verticalCenter(shape):
-	return shape.bounds.origin.y + shape.bounds.size.height/2
+	return shape.bounds.origin.y + shape.bounds.size.height / 2
+
 
 def topEdge(shape):
 	return shape.bounds.origin.y + shape.bounds.size.height
+
 
 def shapeWidth(shape):
 	if isinstance(shape, NSRect):
 		return shape.size.width
 	return shape.bounds.size.width
 
+
 def shapeHeight(shape):
 	if isinstance(shape, NSRect):
 		return shape.size.height
 	return shape.bounds.size.height
 
+
 def transformationForMove(x=0.0, y=0.0):
 	myTransform = NSAffineTransform.transform()
-	myTransform.translateXBy_yBy_(x,y)
+	myTransform.translateXBy_yBy_(x, y)
 	return myTransform.transformStruct()
-
 
 
 class Distribute (PalettePlugin):
@@ -73,8 +81,8 @@ class Distribute (PalettePlugin):
 			'pt': 'Distribuir',
 			'cs': 'Rozložit',
 			'zh': '重新排列',
-			})
-		
+		})
+
 		# Load .nib dialog (without .extension)
 		self.loadNib('IBdialog', __file__)
 
@@ -90,7 +98,7 @@ class Distribute (PalettePlugin):
 				elif selectedItem.parent in layer.shapes:
 					# partially selected path:
 					parentItem = selectedItem.parent
-					if not parentItem in selection:
+					if parentItem not in selection:
 						selection.append(parentItem)
 		return selection
 
@@ -99,7 +107,7 @@ class Distribute (PalettePlugin):
 		selectedObjects = self.selectedObjects()
 		if selectedObjects:
 			sortedShapes = None
-			
+
 			if len(selectedObjects) == 1:
 				# align with glyph metrics if only one object is selected:
 				shape = selectedObjects[0]
@@ -107,19 +115,19 @@ class Distribute (PalettePlugin):
 				ghost1, ghost2 = GSPath(), GSPath()
 				if distributePos in (leftEdge, horizontalCenter, rightEdge):
 					ghost1.nodes.append(GSNode())
-					ghost2.nodes.append(GSNode( (layer.width,0) ))
+					ghost2.nodes.append(GSNode((layer.width, 0)))
 				elif distributePos in (bottomEdge, verticalCenter, topEdge):
 					heights = sorted([m.position for m in layer.metrics])
 					if len(heights) == 0:
 						heights = (0.0,)
-					ghost1.nodes.append(GSNode( (0,heights[0]) ))
-					ghost2.nodes.append(GSNode( (0,heights[-1]) ))
+					ghost1.nodes.append(GSNode((0, heights[0])))
+					ghost2.nodes.append(GSNode((0, heights[-1])))
 				sortedShapes = (ghost1, selectedObjects[0], ghost2)
-				
+
 			elif len(selectedObjects) > 2:
 				# align 3+ objects with each other:
-				sortedShapes = sorted(selectedObjects, key = lambda shape: distributePos(shape))
-				
+				sortedShapes = sorted(selectedObjects, key=lambda shape: distributePos(shape))
+
 			if sortedShapes:
 				firstPos = distributePos(sortedShapes[0])
 				lastPos = distributePos(sortedShapes[-1])
@@ -127,7 +135,7 @@ class Distribute (PalettePlugin):
 				shapeCount = len(sortedShapes)
 				displacement = totalSpan / (shapeCount - 1)
 				for i, shape in enumerate(sortedShapes):
-					if i > 0 and i < (shapeCount-1): # do not need to move edge shapes
+					if i > 0 and i < (shapeCount - 1):  # do not need to move edge shapes
 						currentAbsolutePos = distributePos(shape)
 						newRelativePos = i * displacement
 						move = firstPos + newRelativePos - currentAbsolutePos
@@ -140,50 +148,50 @@ class Distribute (PalettePlugin):
 	@objc.IBAction
 	def distributeBottomEdges_(self, sender):
 		self.distribute(distributePos=bottomEdge, vertically=True)
-	
+
 	@objc.IBAction
 	def distributeTopEdges_(self, sender):
 		self.distribute(distributePos=topEdge, vertically=True)
-	
+
 	@objc.IBAction
 	def distributeLeftEdges_(self, sender):
 		self.distribute(distributePos=leftEdge, vertically=False)
-	
+
 	@objc.IBAction
 	def distributeRightEdges_(self, sender):
 		self.distribute(distributePos=rightEdge, vertically=False)
-	
+
 	@objc.IBAction
 	def distributeCentersV_(self, sender):
 		self.distribute(distributePos=verticalCenter, vertically=True)
-	
+
 	@objc.IBAction
 	def distributeCentersH_(self, sender):
 		self.distribute(distributePos=horizontalCenter, vertically=False)
-	
+
 	@objc.python_method
 	def distributeGaps(self, widthOrHeight=shapeWidth, verticalDistribution=False):
 		selectedObjects = self.selectedObjects()
-		if selectedObjects and len(selectedObjects)>2:
+		if selectedObjects and len(selectedObjects) > 2:
 			sortedShapes = sorted(
 				selectedObjects,
-				key = lambda shape: NSMidY(shape.bounds) if verticalDistribution else NSMidX(shape.bounds)
+				key=lambda shape: NSMidY(shape.bounds) if verticalDistribution else NSMidX(shape.bounds)
 			)
-				
+
 			encompassingRect = sortedShapes[0].bounds.copy()
 			totalWidthOrHeight = 0
 			for shape in sortedShapes:
 				encompassingRect = NSUnionRect(encompassingRect, shape.bounds)
 				totalWidthOrHeight += widthOrHeight(shape)
-			
+
 			shapeCount = len(sortedShapes)
 			gapCount = shapeCount - 1
 			encompassingWidthOrHeight = widthOrHeight(encompassingRect)
 			totalGaps = encompassingWidthOrHeight - totalWidthOrHeight
 			newGap = totalGaps / gapCount
-			
+
 			for i, shape in enumerate(sortedShapes):
-				if i > 0 and i < (shapeCount - 1): # do not need to move edge shapes
+				if i > 0 and i < (shapeCount - 1):  # do not need to move edge shapes
 					previousShape = sortedShapes[i - 1]
 					previousShapeEdge = topEdge(previousShape) if verticalDistribution else rightEdge(previousShape)
 					shapeEdge = bottomEdge(shape) if verticalDistribution else leftEdge(shape)
@@ -194,11 +202,11 @@ class Distribute (PalettePlugin):
 					else:
 						movement = transformationForMove(x=move)
 					shape.applyTransform(movement)
-	
+
 	@objc.IBAction
 	def distributeGapsV_(self, sender):
 		self.distributeGaps(widthOrHeight=shapeHeight, verticalDistribution=True)
-	
+
 	@objc.IBAction
 	def distributeGapsH_(self, sender):
 		self.distributeGaps(widthOrHeight=shapeWidth, verticalDistribution=False)
